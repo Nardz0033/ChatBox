@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatBox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h2>Simple ChatBox 💬</h2>
+        <button onclick="toggleDark()">🌙</button>
+      </header>
+
+      <div id="chatBox"></div>
+       <div id="typing" style="font-size:12px;color:gray;"></div>
+       <div id="online" style="font-size:12px;color:green;">🟢 Online</div>
+      <form id="chatForm">
+        <input type="text" id="name" placeholder="Your name" required />
+        <input
+          type="text"
+          id="message"
+          placeholder="Type a message..."
+          required
+        />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+   
+    <script src="script.js"></script>
+  </body>
+</html>
